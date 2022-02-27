@@ -1,42 +1,51 @@
-/* Box sizing rules */
 *,
 *::before,
 *::after {
   box-sizing: border-box;
 }
 
-/* Remove default margin */
-body,
-h1,
-h2,
-h3,
-h4,
-p,
-figure,
-blockquote,
-dl,
-dd {
-  margin: 0;
-}
-
-/* Set core root defaults */
-html:focus-within {
-  scroll-behavior: smooth;
-}
-
-/* Set core body defaults */
 body {
-  min-height: 100vh;
-  text-rendering: optimizeSpeed;
   line-height: 1.5;
 }
 
-/* Inherit fonts for inputs and buttons */
 input,
-button,
-textarea,
-select {
+button {
   font: inherit;
 }
 
+.multi-step-form {
+    margin: 1em 0;
+}
 
+.step {
+    max-width: 350px;
+    margin: 0 auto;
+    border: 1px solid gray;
+    padding: 1em;
+    border-radius: 4px;
+}
+
+.field-group {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    margin-top: 1em;
+}
+
+.step__btns {
+    margin-top: 1em;
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn {
+    padding: 2px 12px;
+}
+
+.step {
+    display: none;
+}
+
+.active {
+    display: block;
+}
