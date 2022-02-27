@@ -14,38 +14,38 @@ button {
 }
 
 .multi-step-form {
-    margin: 1em 0;
+  margin: 1em 0;
 }
 
 .step {
-    max-width: 350px;
-    margin: 0 auto;
-    border: 1px solid gray;
-    padding: 1em;
-    border-radius: 4px;
+  max-width: 350px;
+  margin: 0 auto;
+  border: 1px solid gray;
+  padding: 1em;
+  border-radius: 4px;
 }
 
 .field-group {
-    display: flex;
-    flex-direction: column;
-    gap: 4px;
-    margin-top: 1em;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  margin-top: 1em;
 }
 
 .step__btns {
-    margin-top: 1em;
-    display: flex;
-    justify-content: space-between;
+  margin-top: 1em;
+  display: flex;
+  justify-content: space-between;
 }
 
 .btn {
-    padding: 2px 12px;
+  padding: 2px 12px;
 }
 
 .step {
-    display: none;
+  display: none;
 }
 
 .active {
-    display: block;
+  display: block;
 }

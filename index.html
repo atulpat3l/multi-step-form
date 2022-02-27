@@ -1,63 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Multistep Form</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     <form class="multi-step-form">
-        <div class="step active">
-            <h3 class="step__title">Register</h3>
-            <div class="field-group">
-                <label for="email">Email</label>
-            <input type="text" name="email" id="email" required>
-            </div>
-            <div class="field-group">
-                <label for="first-name">First Name</label>
-                <input type="text" name="first-name" id="first-name"  required>
-            </div>
-            <div class="field-group">
-                <label for="last-name">Last Name</label>
-                <input type="text" name="last-name" id="last-name" >
-            </div>
-            <div class="step__btns">
-                <button type="button" class="btn btn__next">Next</button>
-            </div>
+      <div class="step active">
+        <h3 class="step__title">Register</h3>
+        <div class="field-group">
+          <label for="email">Email</label>
+          <input type="text" name="email" id="email" required />
         </div>
-        <div class="step">
-            <h3 class="step__title">Set Password</h3>
-            <div class="field-group">
-                <label for="password">Password</label>
-            <input type="text" name="password" id="password" required>
-            </div>
-            <div class="field-group">
-                <label for="confirm-password">Confirm Password</label>
-                <input type="text" name="confirm-password" id="confirm-password" required>
-            </div>     
-            <div class="step__btns">
-                <button type="button" class="btn btn__previous">Back</button>
-                <button type="button" class="btn btn__next">Next</button>
-            </div>
+        <div class="field-group">
+          <label for="first-name">First Name</label>
+          <input type="text" name="first-name" id="first-name" required />
         </div>
-        <div class="step">
-            <h3 class="step__title">Additional Info</h3>
-            <div class="field-group">
-                <label for="Address">Address</label>
-            <input type="text" name="Address" id="Address">
-            </div>
-            <div class="field-group">
-                <label for="phone">Phone</label>
-                <input type="text" name="phone" id="phone">
-            </div>     
-            <div class="step__btns">
-                <button type="button" class="btn btn__previous">Back</button>
-                <button type="button" class="btn btn__submit">Submit</button>
-            </div>
+        <div class="field-group">
+          <label for="last-name">Last Name</label>
+          <input type="text" name="last-name" id="last-name" />
         </div>
+        <div class="step__btns">
+          <button type="button" class="btn btn__next">Next</button>
+        </div>
+      </div>
+      <div class="step">
+        <h3 class="step__title">Set Password</h3>
+        <div class="field-group">
+          <label for="password">Password</label>
+          <input type="text" name="password" id="password" required />
+        </div>
+        <div class="field-group">
+          <label for="confirm-password">Confirm Password</label>
+          <input
+            type="text"
+            name="confirm-password"
+            id="confirm-password"
+            required
+          />
+        </div>
+        <div class="step__btns">
+          <button type="button" class="btn btn__back">Back</button>
+          <button type="button" class="btn btn__next">Next</button>
+        </div>
+      </div>
+      <div class="step">
+        <h3 class="step__title">Additional Info</h3>
+        <div class="field-group">
+          <label for="Address">Address</label>
+          <input type="text" name="Address" id="Address" />
+        </div>
+        <div class="field-group">
+          <label for="phone">Phone</label>
+          <input type="text" name="phone" id="phone" />
+        </div>
+        <div class="step__btns">
+          <button type="button" class="btn btn__back">Back</button>
+          <button type="button" class="btn btn__submit">Submit</button>
+        </div>
+      </div>
     </form>
-    <script src="main.js"></script>
-</body>
+    <script src="script.js"></script>
+  </body>
 </html>
